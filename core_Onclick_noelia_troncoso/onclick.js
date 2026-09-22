@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll(".boton-megusta");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    const current = Number(button.dataset.count || 0);
+      const current = Number(button.dataset.count || 0);
     const next = current + 1;
     button.dataset.count = String(next);
     button.textContent = `${next} Me gusta`;
