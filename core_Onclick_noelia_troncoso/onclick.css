@@ -1,0 +1,167 @@
+/* Reset general para que todos los elementos queden con el mismo cálculo
+  de tamaño y sin márgenes por defecto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo general de la página y color base del texto */
+body {
+  background: #edf0f3;
+  color: #2f2f2f;
+}
+
+/* Barra superior violeta con logo, buscador y botón de login */
+.barra-superior {
+  background: linear-gradient(90deg, #8f7ae7 0%, #8a78dc 100%);
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 66px 0 72px;
+  color: #fff;
+}
+
+/* Estilo del texto del logo del blog */
+.logo {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+/* Contenedor del buscador, centrado y con ancho máximo */
+.buscador {
+  flex: 1;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Campo de texto del buscador con bordes redondeados */
+.buscador input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.96);
+  font-size: 1rem;
+}
+
+/* Botón de iniciar sesión, con fondo oscuro y texto blanco */
+.boton-login {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Contenedor principal donde van las tarjetas y el panel lateral */
+.contenido {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  align-items: flex-start;
+}
+
+/* Contenedor de la columna de publicaciones */
+.tarjetas {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Estilo de cada publicación o tarjeta de contenido */
+.tarjeta {
+  background: rgba(244, 245, 246, 0.95);
+  border-radius: 14px;
+  padding: 26px 28px 18px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Título principal de cada publicación */
+.tarjeta h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+
+/* Texto de los párrafos dentro de cada publicación */
+.tarjeta p {
+  font-size: 1.08rem;
+  color: #2a2a2a;
+  margin-bottom: 4px;
+}
+
+/* Estilo más fuerte para las etiquetas como "Publicado por: */
+.tarjeta strong {
+  font-weight: 700;
+}
+
+/* Párrafo descriptivo del contenido de cada post */
+.texto-post {
+  margin-top: 18px;
+  margin-bottom: 24px !important;
+  font-size: 1.06rem;
+}
+
+/* Botón rojo para dar me gusta*/
+.boton-megusta {
+  background: #f37b7b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Panel de bienvenida a la derecha con texto e invitación */
+.panel-bienvenida {
+  width: 310px;
+  background: rgba(244, 245, 246, 0.95);
+  border-radius: 14px;
+  padding: 22px 20px 18px;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Título del panel de bienvenida */
+.panel-bienvenida h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+/* Descripción del panel de bienvenida */
+.panel-bienvenida p {
+  font-size: 1.1rem;
+  color: #2d2d2d;
+  margin-bottom: 18px;
+}
+
+/* Botón azul del perfil con fondo turquesa */
+.boton-perfil {
+  background: #4fd5d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  padding: 9px 14px;
+  width: auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}

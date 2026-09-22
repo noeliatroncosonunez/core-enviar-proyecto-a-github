@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="onclick.css" />
+    <title>Social Blog</title>
+</head>
+<body>
+    <header class="barra-superior">
+        <h1 class="logo">Social Blog</h1>
+
+        <nav class="buscador" aria-label="Buscar publicaciones">
+            <input id="txtSearch" type="search" placeholder="Buscar publicaciones..." />
+        </nav>
+
+        <button id="btnLogin" class="boton-login" type="button" onclick="toggleLogin()">
+            Iniciar sesión
+        </button>
+    </header>
+
+    <main class="contenido">
+        <section class="tarjetas" aria-label="Publicaciones">
+            <article class="tarjeta" aria-label="Publicación">
+                <h2>Fundamentos de JavaScript</h2>
+                <p><strong>Publicado por:</strong> Carlos Pérez</p>
+                <p><strong>Fecha:</strong> 02/03/2025</p>
+                <p class="texto-post">
+                    JavaScript es un lenguaje de programación que se utiliza en el desarrollo web.
+                    Aprende los conceptos básicos para comenzar a programar.
+                </p>
+                <button class="boton-megusta" type="button" data-count="0">Me gusta</button>
+            </article>
+
+            <article class="tarjeta" aria-label="Publicación">
+                <h2>Aprende a diseñar con CSS</h2>
+                <p><strong>Publicado por:</strong> Ana Gómez</p>
+                <p><strong>Fecha:</strong> 01/03/2025</p>
+                <p class="texto-post">
+                    El diseño web es una parte fundamental en el desarrollo de aplicaciones web.
+                    Conoce las propiedades de CSS para crear interfaces activas.
+                </p>
+                <button class="boton-megusta" type="button" data-count="0">Me gusta</button>
+            </article>
+        </section>
+
+        <aside class="panel-bienvenida">
+            <h2>¡Bienvenido!</h2>
+            <p>Explora nuevas publicaciones y conecta con otros usuarios.</p>
+            <button class="boton-perfil" type="button" onclick="verPerfil()">Ver perfil</button>
+        </aside>
+    </main>
+
+    <script src="onclick.js"></script>
+</body>
+</html>
